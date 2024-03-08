@@ -14,7 +14,7 @@
 
 html {
     scroll-behavior:smooth;
-    
+    overflow-x: hidden;
 }
 
 section {
@@ -25,7 +25,7 @@ section {
 
 body {
     min-height: 100vh;
-    background-color: rgb(161, 149, 243);
+    background-color: #a195f3;
     /*background-image: linear-gradient(to right,rgb(167, 223, 245) ,rgb(178, 179, 255));
     background-size: 200%;
     animation: gradient 5s ease infinite;
@@ -89,18 +89,18 @@ body {
 /*content section*/
 .content{
   max-width: 650px;
-  margin:60px 50px;
+  /*margin:60px 50px;*/
   align-items: center;
   justify-content: space-between;
   min-height: 10vh;
-  padding: 40px;
+  padding: 10px;
   flex:50%;
   display: flex;
   flex-direction:table-row;
   transition:300ms;
 }
 .content .info{
-  padding:50px;
+  padding:10px;
 }
 .content .info h2{
     color:#42115c;
@@ -131,45 +131,8 @@ body {
   color: rgb(253, 254, 254);
   letter-spacing: 2px;
   word-spacing: 2px;
-
+  padding-left: 30px;
 }
-/* typing animation
-.info .txt{
-  display:inline-flex;
-  width: 100vw;
-}
-
-.txt .static{
-  font-size: 28px;
-  font-weight: 400;
-}
-.txt .dynamic{
-  margin-left: 10px;
-}
-.dynamic li{
-  list-style: none;
-  font-size: 28px;
-  font-weight:550;
-}
-.dynamic li span{
-  position: relative;
-}
-.dynamic li span::after{
-  content: "";
-  position: absolute;
-  left:0;
-  height: 100%;
-  width:100%;
-  border-left: 2px solid grey;
-  animation:typing 3.5s steps(26) infinite;
-  background-image: linear-gradient(to right,rgb(167, 223, 245) ,rgb(178, 179, 255));
-}
-@keyframes typing{
-  100%{
-     left:100%;
-     margin:0 -35px 0 35px;
-  }
-}*/
 .content .imgbox img{
   position:relative;
   width:600px;
@@ -182,10 +145,69 @@ body {
   display:flex;
   justify-content: center;
   align-items: center;
-  border-top:1px solid rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
+  
   margin-bottom:30px;
+}
+.imgbox:hover{
+  transform: scale(1.075);
+
+}
+
+/*mission page2*/
+.mission{
+  /*background-color:#b6adec;*/
+  width:100vw;
+  height:100vh;
+  padding-top:1px;
+}
+.container1{
+  width:75%;
+  height:600px;
+  margin: 100px auto;
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient( to bottom right ,#430788, #4b0386, #1d0264, #12003e);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.397) ;                 /*1st & 2nd px level of shadow 3rd px-shadow spread karne ke liye*/
+}
+.container1 .infomv{
+  max-width: 650px;
+  min-height: 100vh;
+  padding-right: 70px ;
+  flex:50%;
+  transition:300ms;
+}
+.container1 .imgm img{
+  position:relative;
+  width:500px;
+  height:400px;
+  margin:60px;
+  border-radius: 20px;
+  background:#ffffff1a;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.397) ;                 /*1st & 2nd px level of shadow 3rd px-shadow spread karne ke liye*/
+  margin-bottom:30px;
+  margin-top: 90px;
   -webkit-transaction:.3s ease-in-out;
   transition:.3s ease-in-out;
+}
+.mission .container1 h1{
+  color: #a195f3;
+  text-align: center;
+  margin:60px 2px 5px 2px;
+  padding:20px ;
+  text-shadow: 5px 6px 10px #360e4f;
+
+}
+.mission .container1 p{
+  color:#b6adec;
+  text-align: justify;
+  
 }
