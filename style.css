@@ -21,12 +21,13 @@ section {
     /* border: 1px solid red; */
     width: 85%;
     margin: 4rem auto;
+    position: relative;
 }
 
 body {
     min-height: 100vh;
     background-color: #a195f3;
-    /*background-image: linear-gradient(to right,rgb(167, 223, 245) ,rgb(178, 179, 255));
+    /*background-image: linear-gradient(to right,#8b84f1 ,#a195f3);
     background-size: 200%;
     animation: gradient 5s ease infinite;
 }
@@ -39,7 +40,7 @@ body {
 }
 
 .navbar {
-    width: 80%;
+    width: 75%;
     max-width: 1400px;
     height: 70px;
     border-radius: 16.5px;
@@ -150,20 +151,17 @@ body {
 }
 .imgbox:hover{
   transform: scale(1.075);
-
 }
 
 /*mission page2*/
 .mission{
   /*background-color:#b6adec;*/
-  width:100vw;
-  height:100vh;
-  padding-top:1px;
+  padding-top:90px;
 }
 .container1{
-  width:75%;
+  width:85%;
   height:600px;
-  margin: 100px auto;
+  margin-left: 100px;
   flex: 50%;
   display: flex;
   flex-direction: row;
@@ -177,9 +175,10 @@ body {
 .container1 .infomv{
   max-width: 650px;
   min-height: 100vh;
-  padding-right: 70px ;
+  padding:10px ;
   flex:50%;
   transition:300ms;
+  overflow: hidden;
 }
 .container1 .imgm img{
   position:relative;
@@ -200,14 +199,118 @@ body {
 }
 .mission .container1 h1{
   color: #a195f3;
-  text-align: center;
-  margin:60px 2px 5px 2px;
+  margin:30px 2px 2px 2px;
   padding:20px ;
+  padding-left: 100px;
   text-shadow: 5px 6px 10px #360e4f;
-
 }
 .mission .container1 p{
   color:#b6adec;
   text-align: justify;
-  
+  padding-right: 70px;
 }
+
+/*tools page3*/
+
+.toolsec{
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  width:100vw;
+  height:100vh;
+}
+.toolsec h2{
+  padding-top: 20px;
+  margin:10px;
+  font-size: 30px;
+}
+.tools{
+  position: relative;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  max-width:1200px;
+  flex-wrap:wrap;
+  z-index:1;
+  padding: 3rem;
+}
+.tools .card{
+  position:relative;
+  width:300px;
+  height:250px;
+  margin:30px;
+  box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.397) ;                 /*1st & 2nd px level of shadow 3rd px-shadow spread karne ke liye*/
+  border-radius: 20px;
+  background-color: #ffffffc6;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index:1;
+  /*border-top:1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);*/
+  backdrop-filter: blur(5px);          /*blur card*/
+}
+.card:hover{
+  height:360px;
+  transition: 0.5s;
+}
+.tools .card:hover .imgbxt{
+  top:-50px;
+  box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.397) ;                 /*1st & 2nd px level of shadow 3rd px-shadow spread karne ke liye*/
+}
+.tools .card:hover  h3{
+  top:-100px;
+}
+.tools .card .tool {
+  position: absolute;
+  width:100%;
+  height:100px;
+  padding:30px;
+  text-align:justify;
+  overflow: hidden;
+  top:130px;
+  transition: 0.5s;
+}
+.tools .card:hover .tool{
+  top:90px;
+  height: 250px;
+  padding-top:10px ;
+}
+.tools .card .imgbxt{
+  position:absolute;
+  top:20px;
+  width:250px;
+  overflow: hidden;
+  height:143px;
+  border-radius: 10px;
+  background: #12003e;
+  box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.397) ;                 /*1st & 2nd px level of shadow 3rd px-shadow spread karne ke liye*/
+
+}
+.img{
+  object-fit: contain;
+  width:100%;
+}
+.tools .card .tool h3{
+  font-size:1.5em;
+  color:#360e4f;
+  z-index:1;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin:20px 0 10px;
+  line-height: 1.1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tools .card .tool p{
+  padding:0px;
+  font-size: 15px;
+}
+
+
+
+
